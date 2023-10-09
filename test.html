@@ -1,59 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="test.css" />
-  </head>
-  <body>
-    <h2>Logga in</h2>
-    <div class="formContainer">
-      <form action="https://httpbin.org/anything" method="post">
-        <div class="firstName">
-          <label for="firstName">First Name</label>
-          <input id="firstName" name="firstName" type="text" required />
-        </div>
-        <div class="lastName">
-          <label for="lastName">Last Name</label>
-          <input id="lastName" name="lastName" type="text" required />
-        </div>
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
-        <div class="password">
-          <label for="pass">Password</label>
-          <input id="pass" name="password" type="password" required />
-        </div>
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
 
-        <div class="email">
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" required />
-        </div>
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
 
-        <div class="message">
-          <label for="msg">Message</label>
-          <textarea id="msg" name="message"></textarea>
-        </div>
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
 
-        <div class="food">
-          <p>Choose food</p>
-          <input type="radio" value="pizza" name="food" id="Pizza" /><label
-            for="Pizza"
-            >Pizza</label
-          >
-          <input type="radio" value="pasta" name="food" id="Pasta" /><label
-            for="Pasta"
-            >Pasta</label
-          >
-          <input type="radio" value="bread" name="food" id="Bread" /><label
-            for="Bread"
-            >Bread</label
-          >
-        </div>
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
 
-        <div class="send">
-          <button type="submit">Skicka</button>
-        </div>
-      </form>
-    </div>
-  </body>
-</html>
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
