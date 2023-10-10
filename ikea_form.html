@@ -8,16 +8,27 @@
 </head>
 <body>
     <div class="formContainer">
-        <h1>Bli IKEA Family medlem</h1>
-        <p>Är du redan medlem? <a href="#">Logga in</a></p>
+        <img class="logo" src="https://se.accounts.ikea.com/resources/static/logo.png" alt="logo">
+        <div class="left">
+            <h1>Bli IKEA Family medlem</h1>
+            <p>Är du redan medlem? <a href="#">Logga in</a></p>
+            <div class="imgGrid">
+                <div class="box 1"></div>
+                <div class="box 2"></div>
+                <div class="box 3"></div>
+                <div class="box 4"></div>
+                <div class="box 5"></div>
+                <div class="box 6"></div>
+            </div>
+        </div>
+        
 
         <form action="https://httpbin.org/anything" method="post">
             <p>Vad kul att du vill skapa ett konto hos oss! Välj om du vill bli IKEA Family medlem, helt utan kostnad. Annars skapar du ett enkelt IKEA konto utan några extra förmåner.</p>
-            
             <div class="radio">
                 <input type="radio" name="förmåner" id="ja" value="ja">
                 <label for="ja">Ja, jag vill bli medlem och ta del av förmåner, medlemspriser och mycket mer! <a href="#">Mer information</a></label>
-    
+                <br><br>
                 <input type="radio" name="förmåner" id="nej" value="nej">
                 <label for="nej">Nej, jag vill inte bli medlem, utan bara skapa ett IKEA konto utan extra förmåner. <a href="#">Mer information</a></label>
             </div>
