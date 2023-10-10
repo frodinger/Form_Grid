@@ -9,6 +9,7 @@
 <body>
     <div class="formContainer">
         <h1>New User</h1>
+        <p>Please fill out this form to create an account</p>
         <form action="https://httpbin.org/anything" method="post">
             <div class="firstName">
                 <label for="firstName">First Name</label>
@@ -23,17 +24,17 @@
             <div class="container">
                 <h2>Gender</h2>
                 <div class="radio">
-                    <input type="radio" name="radio" id="opt1" value="opt1">
-                    <label for="opt2">Man </label>
+                    <input type="radio" name="Gender" id="Man" value="Man">
+                    <label for="Man">Man </label>
     
-                    <input type="radio" name="radio" id="opt2" value="opt2">
-                    <label for="opt2">Woman</label>
+                    <input type="radio" name="Gender" id="Woman" value="Woman">
+                    <label for="Woman">Woman</label>
     
-                    <input type="radio" name="radio" id="opt3" value="opt3">
-                    <label for="opt3">Non-binary</label>
+                    <input type="radio" name="Gender" id="Non-binary" value="Non-binary">
+                    <label for="Non-binary">Non-binary</label>
 
-                    <input type="radio" name="radio" id="opt4" value="opt4">
-                    <label for="opt4">Other</label>
+                    <input type="radio" name="Gender" id="Other" value="Other">
+                    <label for="Other">Other</label>
                 </div>
             </div>
 
@@ -53,7 +54,7 @@
             </div>
 
             <div class="checkbox">
-                <input type="checkbox" name="terms" id="terms" value="terms">
+                <input type="checkbox" name="terms" id="terms" value="terms" required>
                 <label for="checkbox">I agree with <a href="#">the terms and conditions</a></label>
             </div>
 

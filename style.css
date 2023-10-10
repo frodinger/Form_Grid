@@ -14,6 +14,12 @@ body {
 
 h1 {
     color: #4371e7;
+    margin-bottom: 10px;
+}
+
+p {
+  font-size: 15px;
+  margin-bottom: 30px;
 }
 
 h2 {
@@ -51,14 +57,14 @@ input[type="text"], input[type="password"], input[type="email"] {
   }
 
   button:hover {
-    background-color: #1a4bc5;
+    background-color: #123898;
   }
 
   .register, .email, .password, .radio, .checkbox {
     grid-column: 1;
   }
 
-  input[type="radio"] {
+  /* input[type="radio"] {
     appearance: none;
     width: 20px;
     height: 20px;
@@ -92,7 +98,7 @@ input[type="text"], input[type="password"], input[type="email"] {
     height: 20px;
     outline: none;
     border: 1.5px solid #a0a0a0;
-  }
+  } */
 
   .radio, .checkbox {
     display: flex;
@@ -114,5 +120,5 @@ input[type="text"], input[type="password"], input[type="email"] {
   }
 
   a {
-    color: #1a4bc5;
+    color: #222222;
   }
