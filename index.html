@@ -12,35 +12,44 @@
         <form action="https://httpbin.org/anything" method="post">
             <div class="firstName">
                 <label for="firstName">First Name</label>
-                <input id="firstName" name="firstName" type="text" required/>
+                <input id="firstName" name="firstName" type="text" placeholder="Your name" required/>
             </div>
 
             <div class="lastName">
                 <label for="lastName">Last Name</label>
-                <input type="text" id="lastName" name="lastName" required/>
+                <input type="text" id="lastName" name="lastName" placeholder="Your last name" required/>
             </div>
 
-            <div class="radio">
-                <input type="radio" name="radio" id="opt1" value="opt1">
-                <label for="opt2">Radio</label>
+            <div class="container">
+                <h2>Gender</h2>
+                <div class="radio">
+                    <input type="radio" name="radio" id="opt1" value="opt1">
+                    <label for="opt2">Man </label>
+    
+                    <input type="radio" name="radio" id="opt2" value="opt2">
+                    <label for="opt2">Woman</label>
+    
+                    <input type="radio" name="radio" id="opt3" value="opt3">
+                    <label for="opt3">Non-binary</label>
 
-                <input type="radio" name="radio" id="opt2" value="opt2">
-                <label for="opt2">Radio</label>
+                    <input type="radio" name="radio" id="opt4" value="opt4">
+                    <label for="opt4">Other</label>
+                </div>
             </div>
 
             <div class="email">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
             </div>
 
             <div class="password">
                 <label for="password">Password</label>
-                <input id="password" name="password" type="password" required/>
+                <input id="password" name="password" type="password" placeholder="Your password" required/>
             </div>
 
             <div class="passwordConfirm">
                 <label for="passwordConfirm">Confirm Password</label>
-                <input id="passwordConfirm" name="passwordConfirm" type="password" required/>
+                <input id="passwordConfirm" name="passwordConfirm" type="password" placeholder="Repeat your password" required/>
             </div>
 
             <div class="checkbox">

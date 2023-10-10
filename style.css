@@ -3,17 +3,26 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #3f3f3f;
-}
-
-h1 {
-    color: #4371e7;
+    color: #222222;
 }
 
 .formContainer form {
     display: grid;
     grid-template-columns: minmax(100px, 400px) minmax(100px, 400px);
     gap: 20px;
+}
+
+h1 {
+    color: #4371e7;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 16px;
 }
 
 .lastName, .firstName, .email, .password {
@@ -24,14 +33,10 @@ h1 {
 input[type="text"], input[type="password"], input[type="email"] {
     width: 100%;
     padding: 8px;
-    border: 1.5px solid #c3c3c3; 
+    border: 1.5px solid #a0a0a0; 
     box-sizing: border-box;
     border-radius: 10px;
     margin-top: 8px;
-  }
-
-  label {
-    font-weight: 600;
   }
 
   button {
@@ -59,7 +64,7 @@ input[type="text"], input[type="password"], input[type="email"] {
     height: 20px;
     border-radius: 50%;
     outline: none;
-    border: 1.5px solid #c3c3cc;
+    border: 1.5px solid #a0a0a0;
   }
   
   input[type="radio"]:before {
@@ -86,7 +91,7 @@ input[type="text"], input[type="password"], input[type="email"] {
     width: 20px;
     height: 20px;
     outline: none;
-    border: 1.5px solid #c3c3c3;
+    border: 1.5px solid #a0a0a0;
   }
 
   .radio, .checkbox {
@@ -96,4 +101,18 @@ input[type="text"], input[type="password"], input[type="email"] {
 
   .radio label, .checkbox label {
     margin: 0px 20px 0px 10px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .container {
+    grid-column: span 2;
+  }
+
+  input:focus::placeholder {
+    color: transparent;
+  }
+
+  a {
+    color: #1a4bc5;
   }
