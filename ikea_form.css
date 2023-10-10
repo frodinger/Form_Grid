@@ -36,7 +36,7 @@ body {
 
 .left h1 {
     font-weight: 700;
-    color: #003399;
+    color: #0158a7;
     margin-bottom: 20px;
 }
 
@@ -55,7 +55,7 @@ body {
 .box {
     width: 100%;
     height: 200px;
-    background-color: #ffcc00;
+    background-color: #fbda0c;
 }
 
 form {
@@ -87,10 +87,11 @@ input[type="text"], input[type="password"], input[type="email"] {
   }
 
   form p {
-    font-weight: 600;
+    font-weight: 700;
   }
 
   .email p {
+    margin-top: 5px;
     font-weight: 400;
     font-size: 12px;
     color: #707070;
@@ -110,4 +111,13 @@ input[type="text"], input[type="password"], input[type="email"] {
 
   button:hover {
     background-color: #434343;
+  }
+
+  label {
+    font-weight: 500;
+  }
+
+  .radio label, .checkbox label {
+    font-weight: 400;
+    font-size: 14px;
   }
