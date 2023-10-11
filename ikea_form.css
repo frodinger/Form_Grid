@@ -11,7 +11,7 @@ body {
     align-items: center;
     justify-content: center;
     margin: 20px;
-    color: #000000;
+    color: #101010;
 }
 
 .logo {
@@ -105,7 +105,7 @@ input[type="text"], input[type="password"], input[type="email"] {
   }
 
   a {
-    color: #222222;
+    color: #101010;
     font-weight: 600;
   }
 
@@ -130,7 +130,7 @@ input[type="text"], input[type="password"], input[type="email"] {
     width: 100%;
     padding: 10px 15px;
     border: 2px solid transparent;
-    background-color: #222222;
+    background-color: #101010;
     color: white;
     font-weight: 700;
     font-size: 16px;
@@ -138,7 +138,7 @@ input[type="text"], input[type="password"], input[type="email"] {
   }
 
   button:hover {
-    background-color: #434343;
+    background-color: #222222;
   }
 
   label {
