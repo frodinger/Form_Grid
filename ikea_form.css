@@ -11,7 +11,7 @@ body {
     align-items: center;
     justify-content: center;
     margin: 20px;
-    color: #222222;
+    color: #131313;
 }
 
 .logo {
@@ -34,9 +34,13 @@ body {
     grid-row: 2;
 }
 
+.headline {
+  display: flex;
+}
+
 .left h1 {
-    font-weight: 700;
     color: #0158a7;
+    font-weight: 700;
     margin-bottom: 20px;
 }
 
@@ -48,8 +52,6 @@ body {
     display: grid;
     grid: repeat(2, 1fr) / repeat(2, 1fr);
     gap: 10px;
-    grid-row: 3;
-    grid-column: 1;
 }
 
 .box {
